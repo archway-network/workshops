@@ -1,0 +1,98 @@
+{
+  "name": "increment",
+  "developer": {
+    "archwayd": {
+      "docker": false
+    },
+    "scripts": {
+      "test": "cargo unit-test",
+      "build": "cargo build",
+      "optimize": "cargo run-script optimize",
+      "wasm": "cargo wasm",
+      "query": "archwayd query wasm",
+      "tx": "archwayd tx wasm execute"
+    },
+    "deployments": [
+      {
+        "type": "set-metadata",
+        "chainId": "constantine-1",
+        "codeId": 338,
+        "txhash": "33398AED52B8528F1C971277118B2678AC524FC755A3C87A85B5923103A7EAB6",
+        "contract": "archway1keasgvph4eaq9wqzgjju2ccwsv7lmnev27f9aa5shzgnwtcxpkmsh7mq6x",
+        "contractMetadata": {
+          "developerAddress": "archway1u409503yym2uj2nu7pp4vftsvkruh4cvxcfpq6",
+          "rewardAddress": "archway1ptudqaf9sndujypkh9fknryae8wsmqcwfa57mxu2tfj89kflhazssulgxf",
+          "collectPremium": true,
+          "premiumPercentage": 200
+        }
+      },
+      {
+        "type": "set-metadata",
+        "chainId": "constantine-1",
+        "codeId": 338,
+        "txhash": "746AE0F547E0406D4B5DA79EC35C0886F5AE27685DAC47A0DC92365BB61E0B05",
+        "contract": "archway1keasgvph4eaq9wqzgjju2ccwsv7lmnev27f9aa5shzgnwtcxpkmsh7mq6x",
+        "contractMetadata": {
+          "developerAddress": "archway1u409503yym2uj2nu7pp4vftsvkruh4cvxcfpq6",
+          "rewardAddress": "archway12vnmsx59ndnds3l5496jmktucnshq53kmep877",
+          "collectPremium": true,
+          "premiumPercentage": 200
+        }
+      },
+      {
+        "type": "set-metadata",
+        "chainId": "constantine-1",
+        "codeId": 338,
+        "txhash": "9CFE245BD13038C6F8DDAF14BE19D8F30DA26C1CD0334E300D590A246E68F5A7",
+        "contract": "archway1keasgvph4eaq9wqzgjju2ccwsv7lmnev27f9aa5shzgnwtcxpkmsh7mq6x",
+        "contractMetadata": {
+          "developerAddress": "archway1u409503yym2uj2nu7pp4vftsvkruh4cvxcfpq6",
+          "rewardAddress": "archway12vnmsx59ndnds3l5496jmktucnshq53kmep877",
+          "gasRebate": true
+        }
+      },
+      {
+        "type": "instantiate",
+        "chainId": "constantine-1",
+        "codeId": 338,
+        "txhash": "E4E02222B155018C87346F19CB8C94E36505121AF9C10B46D0AC355D622D6403",
+        "address": "archway1keasgvph4eaq9wqzgjju2ccwsv7lmnev27f9aa5shzgnwtcxpkmsh7mq6x",
+        "admin": "archway1u409503yym2uj2nu7pp4vftsvkruh4cvxcfpq6"
+      },
+      {
+        "type": "store",
+        "chainId": "constantine-1",
+        "codeId": 338,
+        "txhash": "38F2F58FC60B543B8CB9D2837B2211EA5941CD0259FF27126FBC747E31691434"
+      }
+    ]
+  },
+  "network": {
+    "name": "constantine",
+    "chainId": "constantine-1",
+    "type": "testnet",
+    "fees": {
+      "feeDenom": "uconst"
+    },
+    "gas": {
+      "prices": "0.002uconst",
+      "mode": "auto",
+      "adjustment": "1.3"
+    },
+    "wasm": {
+      "bech32Hrp": "archway",
+      "archwayd": "0.0.4",
+      "configDir": ".archway",
+      "binary": "archwayd"
+    },
+    "urls": {
+      "rpc": {
+        "url": "https://rpc.constantine-1.archway.tech",
+        "port": 443
+      },
+      "faucets": [
+        "https://faucet.constantine-1.archway.tech"
+      ]
+    }
+  }
+}
