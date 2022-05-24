@@ -1,6 +1,8 @@
-# Developer Rewards
+# Archway Developer Rewards
 
 In this workshop, we show how to use the Archway rewards system in different ways.
+
+- [Presentation slides](./presentation/Archway-Developer-Rewards-with-CosmWasm.pdf)
 
 ## Setup
 
