@@ -151,7 +151,7 @@ INIT_MSG="$(jq --null-input \
 
 archway deploy --no-confirm --from deployer --default-label --args "$INIT_MSG"
 
-ESCROW_ADDRESS=$(jq -r '.developer.deployments[] | select(.type == "instantiate") | .address' config.json)
+ESCROW_ADDRESS=$(jq -r '.developer.deployments[] | first(select(.type == "instantiate")) | .address' config.json)
 ```
 
 We will use the contract address saved in `$ESCROW_ADDRESS` on the next step.
