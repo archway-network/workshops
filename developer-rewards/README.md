@@ -2,6 +2,7 @@
 
 In this workshop, we show how to use the Archway rewards system in different ways.
 
+- [Video recording](https://www.youtube.com/watch?v=fit1_bMNgVc)
 - [Presentation slides](./presentation/Archway-Developer-Rewards-with-CosmWasm.pdf)
 
 ## Setup
